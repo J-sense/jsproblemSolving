@@ -1,5 +1,5 @@
 
-
+// Leap Year Calculate
 
 const year = 2000;
 
@@ -12,3 +12,5 @@ if (year % 400 === 0) {
 } else {
     console.log(year + " is not a leap year.");
 }
+
+ 
