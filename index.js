@@ -64,13 +64,13 @@
 // // ----->start<-----
 // // Que no 6 : Write a javascript function that reverse a number?
 
-function annoymous(num){
-    const reversenum = num.toString().split(" ").reverse()
-    return Number(reversenum)
+// function annoymous(num){
+//     const reversenum = num.toString().split(" ").reverse()
+//     return Number(reversenum)
 
-}
-const result =annoymous(12)
-console.log(typeof result)
+// }
+// const result =annoymous(12)
+// console.log(typeof result)
     
 // }
 // const result = reverseaNumber(32)
@@ -78,5 +78,30 @@ console.log(typeof result)
 
 
 // // ----->start<-----
-
+// Que no 7 : Write a javascript funtion that reverse a number passed string is pallindrome or not 
+//   function stringchecker(str){
+//         const reverse = str.split('').reverse().join('')
+//          return str === reverse;
+//   }
+//   console.log(stringchecker("loop"))
 // // // ----->end<-----
+
+
+// ----->start<-----
+// que no 8 : Write a javascript function that returns a passed string with letters in alphabitical order?
+// function sortedbyOrder (stringg){
+//     return stringg.split("").sort()
+// }
+// console.log(sortedbyOrder("not hararm"))
+// ----->end<-----
+
+// que no : Write a javascript fuction that accepts a string as aparameter and converts the first letter of each word of the string in uppercase
+// start
+
+function capitalised(a){
+ let result = a.split(" ").map(a=>{
+    return a.charAt(0).toUpperCase() + a.substring(1)
+ })
+  return result.join(' ')
+}
+console.log( capitalised("ki j boli tumay"))
