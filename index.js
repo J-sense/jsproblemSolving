@@ -98,10 +98,27 @@
 // que no : Write a javascript fuction that accepts a string as aparameter and converts the first letter of each word of the string in uppercase
 // start
 
-function capitalised(a){
- let result = a.split(" ").map(a=>{
-    return a.charAt(0).toUpperCase() + a.substring(1)
+// function capitalised(a){
+//  let result = a.split(" ").map(a=>{
+//     return a.charAt(0).toUpperCase() + a.substring(1)
+//  })
+//   return result.join(' ')
+// }
+// console.log( capitalised("ki j boli tumay"))
+
+
+// Write a javaScript function to get the number of occurrences of each letter in specified string
+
+function countProperty(str){
+    let occuranace = {}
+ str.split("").map((elem)=>{
+     if(occuranace.hasOwnProperty(elem) ===false){
+        occuranace[elem] =1
+     }
+     else{
+        occuranace[elem]++
+     }
+     console.log(occuranace)
  })
-  return result.join(' ')
 }
-console.log( capitalised("ki j boli tumay"))
+countProperty("fjaskljlkjfkkjsdfkjsdfja")
