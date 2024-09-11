@@ -109,16 +109,17 @@
 
 // Write a javaScript function to get the number of occurrences of each letter in specified string
 
-function countProperty(str){
-    let occuranace = {}
- str.split("").map((elem)=>{
-     if(occuranace.hasOwnProperty(elem) ===false){
-        occuranace[elem] =1
-     }
-     else{
-        occuranace[elem]++
-     }
-     console.log(occuranace)
- })
+function command (str){
+let occurances = {};
+str.split("").map(elem=>{
+   if(occurances.hasOwnProperty(elem) == false){
+      occurances[elem]= 1;
+   }
+   else{
+      occurances[elem]++
+   }
 }
-countProperty("fjaskljlkjfkkjsdfkjsdfja")
+)
+console.log(occurances)
+}
+command('fkadshjadshjadshjhkhahdsfl')
